@@ -1,3 +1,5 @@
+package loops;
+
 public class FibonancciSeies {
 
     public static void main(String[] args) {

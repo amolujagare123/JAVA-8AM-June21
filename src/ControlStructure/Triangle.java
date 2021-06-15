@@ -1,3 +1,5 @@
+package ControlStructure;
+
 public class Triangle {
 
     public static void main(String[] args) {
@@ -7,16 +9,16 @@ public class Triangle {
 
         if(a+b+c==180 && a>0 && b>0 && c> 0) {
             if (a == b && b == c)
-                System.out.println("Equilateral Triangle");
+                System.out.println("Equilateral ControlStructure.Triangle");
 
             if (a != b && b != c && c != a)
-                System.out.println("Sclane Triangle");
+                System.out.println("Sclane ControlStructure.Triangle");
 
             if (a == 90 || b == 90 || c == 90)
-                System.out.println("Right angled Triangle");
+                System.out.println("Right angled ControlStructure.Triangle");
 
             if ((a == b && b != c) || (b == c && c != a) || (c == a && a != b))
-                System.out.println("Isosceles Triangle");
+                System.out.println("Isosceles ControlStructure.Triangle");
         }
         else
             System.out.println("This is not a triangle");

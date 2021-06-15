@@ -1,3 +1,5 @@
+package JavaBsics;
+
 public class CharacterDemo {
 
     public static void main(String[] args) {

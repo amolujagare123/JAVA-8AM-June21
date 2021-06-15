@@ -1,3 +1,5 @@
+package ControlStructure;
+
 public class SwitchCasedemo {
 
     public static void main(String[] args) {

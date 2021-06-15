@@ -1,3 +1,5 @@
+package JavaBsics;
+
 class Addition
 {
 
@@ -13,7 +15,7 @@ b =20 ;
 
 c= a + b;
 
-System.out.println("Addition="    +  c);
+System.out.println("JavaBsics.Addition="    +  c);
 
 }
 
