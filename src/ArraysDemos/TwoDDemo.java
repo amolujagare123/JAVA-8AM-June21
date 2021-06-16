@@ -22,14 +22,22 @@ public class TwoDDemo {
         a[3][1] =31;
         a[3][2] =24;
 
-        for(int i = 0;i<4;i++)
+        int row = a.length; // 4
+        int col = a[0].length; // 3
+
+        System.out.println("row="+row);
+        System.out.println("col="+col);
+
+      for(int i=0;i<row;i++) // traversing rows
         {
-            for(int j=0;j<3;j++)
+            for(int j=0;j<col;j++) // traverse colums
             {
                 System.out.print(a[i][j]+" ");
             }
             System.out.println();
+
         }
+
 
     }
 }
