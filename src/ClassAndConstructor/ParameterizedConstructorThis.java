@@ -1,6 +1,6 @@
 package ClassAndConstructor;
 
-public class ParameterizedConstructorDemo {
+public class ParameterizedConstructorThis {
     int a;
     double d;
     char c;
@@ -14,18 +14,18 @@ public class ParameterizedConstructorDemo {
         System.out.println("str="+str);
     }
 
-    ParameterizedConstructorDemo(int a1,double d1,char c1 , String str1)
+    ParameterizedConstructorThis(int a, double d, char c , String str)
     {
-        a = a1;
-        d = d1;
-        c = c1;
-        str = str1;
+        this.a = a;
+        this.d = d;
+        this.c = c;
+        this.str = str;
     }
 
     public static void main(String[] args) {
 
-        ParameterizedConstructorDemo ob1 =
-                new ParameterizedConstructorDemo(2,2.2,'d',"bbb");
+        ParameterizedConstructorThis ob1 =
+                new ParameterizedConstructorThis(2,2.2,'d',"bbb");
         ob1.display();
 
 
