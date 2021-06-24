@@ -23,5 +23,7 @@ public class Java2 {
        // ob.c1 = 'g';
         ob.str1 = "amol";
         ob.display1();
+
+
     }
 }
