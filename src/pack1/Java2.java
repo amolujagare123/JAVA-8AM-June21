@@ -2,12 +2,12 @@ package pack1;
 
 public class Java2 {
 
-    int a2;
-    double d2;
-    char c2;
-    String str2 ;
+    public int a2; // 0
+    public double d2; // 0.0
+    public char c2;  //
+    public String str2 ;// null
 
-    void display1()
+    public void display2()
     {
         System.out.println("a="+a2);
         System.out.println("d="+d2);
