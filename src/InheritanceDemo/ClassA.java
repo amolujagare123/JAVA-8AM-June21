@@ -1,6 +1,6 @@
 package InheritanceDemo;
 
-public final class ClassA {
+public /*final*/ class ClassA {
     int x;
 
     final void myMethod()

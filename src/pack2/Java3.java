@@ -1,6 +1,12 @@
 package pack2;
 
+import StaticFinalDemo.StaticMethodDemo;
 import pack1.Java1;
+
+import static StaticFinalDemo.StaticMethodDemo.method2;
+import static StaticFinalDemo.StaticMethodDemo.myMethod;
+import static StaticFinalDemo.StaticMethodDemo.college;
+//import static  StaticFinalDemo.StaticMethodDemo.*;
 
 public class Java3 extends  Java1 {
 
@@ -34,5 +40,13 @@ public class Java3 extends  Java1 {
      /*   ob.c1 = 'g';
         ob.str1 = "amol";
         ob.display1();*/
+
+       /* StaticMethodDemo.method2();
+        StaticMethodDemo.myMethod();
+        StaticMethodDemo.college="xyz";*/
+
+        method2();
+        myMethod();
+        college="xyz";
     }
 }
