@@ -1,9 +1,9 @@
 package InheritanceDemo;
 
-public /*final*/ class ClassA {
+public  class ClassA {
     int x;
 
-    final void myMethod()
+    void myMethod()
     {
         System.out.println("Parent method");
     }
@@ -14,10 +14,10 @@ class ClassB extends ClassA
 {
     int y;
 
-   /* void myMethod()
+   void myMethod()
     {
         System.out.println("Child method");
-    }*/
+    }
 
     public static void main(String[] args) {
 
