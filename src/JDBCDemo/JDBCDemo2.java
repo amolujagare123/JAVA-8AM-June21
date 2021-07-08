@@ -1,11 +1,8 @@
 package JDBCDemo;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
-public class JDBCDemo1 {
+public class JDBCDemo2 {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         // 1. loading a driver
@@ -21,13 +18,20 @@ public class JDBCDemo1 {
         // 3. creating a statement
         Statement st = con.createStatement();
 
-        // 4. execute query --> DML
-        String sql ="insert into student values(3,'mayur','comp',47)";
-        String sqlDel ="delete from student where rno=1";
-        String sqlUpdate ="update student set branch='comp' , marks=100 where rno=1";
-        // delete & update - Homework
+        // 4. execute query --> DDL
+        String sql ="select * from student";
 
-        st.executeUpdate(sql);
+        ResultSet rs = st.executeQuery(sql);
+
+        while(rs.next())
+        {
+            System.out.print(rs.getInt("rno")+"\t");
+            System.out.print(rs.getString("name")+"\t");
+            System.out.print(rs.getString("branch")+"\t");
+            System.out.print(rs.getInt("marks"));
+
+            System.out.println();
+        }
 
     }
 }
