@@ -1,4 +1,4 @@
-package CollectionDemo;
+package CollectionDemo.ArrayListDemos;
 
 import java.util.ArrayList;
 
@@ -14,7 +14,12 @@ public class RemoveIfDemo {
         al.add(42);
         al.add(39);
 
+        System.out.println(al);
         // remove all even number elements
+
+        al.removeIf(a -> a%2 == 0);
+
+        System.out.println(al);
 
         ArrayList<Character> al1 = new ArrayList<>();
         al1.add('a');
@@ -34,10 +39,12 @@ public class RemoveIfDemo {
         al1.add('o');
 
         // remove all vowel - a,e,i,o,u
+        System.out.println(al1);
 
 
+        al1.removeIf(ch -> (ch=='a' || ch=='e' || ch=='i'||ch =='o'||ch=='u'));
 
-
+        System.out.println(al1);
 
 
     }

@@ -1,8 +1,8 @@
-package CollectionDemo;
+package CollectionDemo.ArrayListDemos;
 
 import java.util.ArrayList;
 
-public class ArrayListDemoString3 {
+public class ArrayListDemoString2 {
 
     public static void main(String[] args) {
 
@@ -19,20 +19,9 @@ public class ArrayListDemoString3 {
 
         ArrayList<String> al1 = new ArrayList();
 
-        al1.add("abc1");
-        al1.add("abc2");
-        al1.add("abc3");
-        al1.add("abc4");
-        al1.add("Prachi");
-        al1.add("Kavya");
-        al1.add("Santosh");
-
         System.out.println("al1="+al1);
-
-        al1.removeAll(al);
-
+        al1.addAll(al);
         System.out.println("al1="+al1);
-
 
     }
 }
